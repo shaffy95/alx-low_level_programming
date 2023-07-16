@@ -5,14 +5,13 @@
 */
 int main(void)
 {
-	int ch = 0;
+	int n = 0;
 
-	if (ch < 10)
+	for (n = 0; n < 10; n++)
 	{
-		putchar(ch);
-		ch++;
+		printf("%d", n);
 	}
 
-	putchar('\n');
+	printf("%s", "\n");
 	return (0);
 }
