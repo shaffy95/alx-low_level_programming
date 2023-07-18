@@ -1,4 +1,6 @@
-#include <main.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
  * main - print out _putchar using printf
  * Return: 0
