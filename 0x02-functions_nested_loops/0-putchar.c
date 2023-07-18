@@ -1,8 +1,6 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <main.h>
 /**
  * main - print out _putchar using printf
- *
  * Return: 0
  */
 int main(void)
