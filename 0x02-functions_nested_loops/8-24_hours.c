@@ -1,14 +1,14 @@
 #include "main.h"
+
 /**
- * main - check the code
- * Return - Always 0 (success)
+ * jack_bauer - prints every minute of day of Jack bauer
+ * starting from 00:00 to 23:59
  */
 void jack_bauer(void)
 {
 	int i, j;
 
 	i = 0;
-
 	while (i < 24)
 	{
 		j = 0;
@@ -22,6 +22,6 @@ void jack_bauer(void)
 			_putchar('\n');
 			j++;
 		}
+		i++;
 	}
-	i++;
 }
