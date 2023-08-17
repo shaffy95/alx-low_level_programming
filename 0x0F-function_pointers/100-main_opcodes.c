@@ -3,16 +3,15 @@
 #include <stdlib.h>
 
 /**
- * main - Entry point
+ * main - Entry point of the program
  *
- * Description: A program that prints the opcodes
- *              of its own main function.
+ * Description: This program prints the opcodes of its own main function.
  *              Usage: ./main number_of_bytes
  *
- * @argc: argument counter
- * @argv: argument vector
+ * @argc: The number of command-line arguments
+ * @argv: An array containing the command-line arguments
  *
- * Return: Always Successful
+ * Return: Always Return Success
  */
 
 int main(int argc, char *argv[])
