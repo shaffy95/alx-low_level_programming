@@ -4,22 +4,22 @@
 #include <stdlib.h> /*for exit*/
 
 /**
- * main - Program Entry
+ * main - Entry point of the program
  *
- * Description: Program that takes 4 arguments where 2 are
- *              int variables plus an operator to perform
- *              a function between the two numbers
+ * Description: This program takes 4 arguments, where the first and third
+ *              are integers, and the second is an operator to perform
+ *              an arithmetic operation between the two numbers.
  *
- *              Usage: ./calc num1 operator num2
- *                         |     |       |     |_ argv[3]
- *                         |     |       |_ argv[2]
- *                         |     |_ argv[1]
- *                         |_ argv[0]
+ * Usage: ./calc num1 operator num2
+ *            |     |       |     |_ argv[3]
+ *            |     |       |_ argv[2]
+ *            |     |_ argv[1]
+ *            |_ argv[0]
  *
- * @argc: argument counter
- * @argv: argument vector
+ * @argc: The number of command-line arguments
+ * @argv: An array containing the command-line arguments
  *
- * Return: 0-on success
+ * Return: void on success
  */
 int main(int argc, char *argv[])
 {
