@@ -1,8 +1,8 @@
 /**
- * print_name - function to print name
+ * print_name - Prints the given name using the provided function pointer.
  *
- * @name: name to print
- * @f: function pointer that doesn't return anything
+ * @name: Name to be printed
+ * @f: Function pointer without return value
  *
  * Return: Always 0 (Success)
  */
