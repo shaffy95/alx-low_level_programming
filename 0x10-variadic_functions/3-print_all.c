@@ -1,5 +1,4 @@
-#include <stdarg.h>
-#include <stdio.h>
+#include "variadic_functions.h"
 
 /**
  * print_all - Prints anything.
@@ -12,12 +11,12 @@
 
 void print_all(const char * const format, ...)
 {
-	va_list print_all;
+	va_list playlist;
 	unsigned int m = 0, n, o = 0;
 	char *str;
 	const char t_arg[] = "abcd";
 
-	va_start(print_all, format);
+	va_start(playlist, format);
 	while (format && format[m])
 	{
 		n = 0;
@@ -32,16 +31,16 @@ void print_all(const char * const format, ...)
 		switch (format[m])
 		{
 			case 'a':
-				printf("%c", va_arg(print_all, int)), o = 1;
+				printf("%c", va_arg(playlist, int)), o = 1;
 				break;
 			case 'b':
-				printf("%d", va_arg(print_all, int)), o = 1;
+				printf("%d", va_arg(playlist, int)), o = 1;
 				break;
 			case 'c':
-				printf("%f", va_arg(print_all, double)), o = 1;
+				printf("%f", va_arg(playlist, double)), o = 1;
 				break;
 			case 'd':
-				str = va_arg(print_all, char *), o = 1;
+				str = va_arg(playlist, char *), o = 1;
 				if (!str)
 				{
 					printf("(nil)");
@@ -51,5 +50,5 @@ void print_all(const char * const format, ...)
 				break;
 		} m++;
 	}
-	printf("\n"), va_end(print_all);
+	printf("\n"), va_end(playlist);
 }
