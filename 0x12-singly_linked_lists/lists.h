@@ -7,13 +7,14 @@
 
 /**
  * struct list_s - singly linked list
- * list_len - Counts the number of elements in a linked list.
- * @h: Pointer to the head of the linked list.
- * Return: Number of elements (nodes) in the list.
+ * @str: string - (malloc'ed string)
+ * @len: length of the string
+ * @next: points to the next node
  *
  * Description: singly linked list node structure
  * for Holberton project
  */
+
 typedef struct list_s
 {
     char *str;
