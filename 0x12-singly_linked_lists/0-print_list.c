@@ -1,11 +1,11 @@
 #include "lists.h"
 
 /**
- * print_list - Prints all elements of a linked list.
+ * print_list - print elements in a linked list
  *
- * @h: Pointer to the head of the linked list.
+ * @h: pointer to head first node
  *
- * Return: Number of nodes in the list.
+ * Return: Number of nodes
  */
 
 size_t print_list(const list_t *h)
@@ -14,11 +14,10 @@ size_t print_list(const list_t *h)
 
 	while (h != NULL)
 	{
-		if (h->str == NULL)
-			printf("[0] (nil)\n");
-		else
-			printf("[%d] %s\n", h->len, h->str);
+		/* if str is NULL, print [0] (nil), else print length and str */
+		printf("[%d] %s\n", (h->str == NULL ? 0 : h->len), (h->str == NULL ? "(nil)" : h->str));
 
+		/* move to the next node and increase node_count */
 		h = h->next;
 		node_count++;
 	}
