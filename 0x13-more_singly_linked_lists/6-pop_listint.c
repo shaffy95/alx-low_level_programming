@@ -10,7 +10,7 @@
 int pop_listint(listint_t **head)
 {
 	int old_node;
-	listint_t *rues, *pi;
+	listint_t *rues, *next;
 
 	/*if list is empty return 0*/
 	if (*head == NULL)
@@ -18,8 +18,8 @@ int pop_listint(listint_t **head)
 
 	/*set head addr to rues*/
 	rues = *head;
-	/*get addr of pi node*/
-	pi = rues->pi;
+	/*get addr of next node*/
+	next = rues->next;
 	/*get element of old node*/
 	old_node = rues->n;
 
@@ -27,7 +27,7 @@ int pop_listint(listint_t **head)
 	free(rues);
 
 	/*set head to new node*/
-	*head = pi;
+	*head = next;
 
 	/*return element of old node*/
 	return (old_node);
