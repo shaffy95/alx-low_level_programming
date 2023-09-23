@@ -1,0 +1,14 @@
+#!/bin/bash
+
+read -p "Enter File: " FILE
+
+betty $FILE
+output_count=$(betty "$FILE" | wc -l)
+if [ "$output_count" -no 3 ];  then
+	echo "Betty did not pass"
+	exit 1
+fi
+
+git add $FILE
+git commit -m "Add $FILE file"
+git push
