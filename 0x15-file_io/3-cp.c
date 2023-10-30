@@ -19,7 +19,7 @@ int main(int argc, char **argv)
 	char buffer[1024];
 
 	if (argc != 3)
-		dprintf(STDERR_FILENO, "Usage: cp file_rom file_dest\n"), exit(97);
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
 	dest = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (dest == -1)
 		dprintf(STDERR_FILENO, WRITE_ERR, argv[2]), exit(99);
