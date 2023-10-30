@@ -4,11 +4,14 @@
 #include "main.h"
 
 /**
- * read_textfile - Reads and prints characters from a file.
+ * read_textfile - Reads and prints
+ * characters from a file.
  * @filename: The path to the file.
- * @letters: The number of characters to read and print.
+ * @letters: The number of characters
+ * to read and print.
  *
- * Return: The number of characters actually read and printed.
+ * Return: The number of characters actually
+ * read and printed.
  */
 
 ssize_t read_textfile(const char *filename, size_t letters)
@@ -45,13 +48,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	p = write(STDOUT_FILENO, chart, bytes);
 
 	if (p == -1)
-	{
-		close(mt);
-		free(chart);
-		return (0);
-	}
-	close(mt);
-	return (bytes);
 	{
 		close(mt);
 		free(chart);
